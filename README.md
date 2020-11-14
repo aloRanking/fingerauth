@@ -1,6 +1,16 @@
 # fingerauth
 
-A new Flutter project.
+A new flutter project that use fingerprint for authourization.
+
+
+
+<img src ="screenshots/screen1.png" width = "200" height = "350">  <img src ="screenshots/screen2.png" width = "200" height = "350"> <img src ="screenshots/screen3.png" width = "200" height = "350"> <img src ="screenshots/screen4.png" width = "200" height = "350">
+
+#Packages used.
+
+local_auth: ^0.6.3+4
+
+
 
 ## Getting Started
 

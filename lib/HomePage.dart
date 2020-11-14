@@ -11,7 +11,7 @@ class _HomePageState extends State<HomePage> {
   LocalAuthentication auth = LocalAuthentication();
   bool _canCheckBiometric;
   List<BiometricType> _availableBiometric;
-  String authorized = "Not authorized";
+  String authorized = "Not authourized";
 
   //checking bimetrics
   //this function will check the sensors and will tell us
@@ -87,12 +87,16 @@ class _HomePageState extends State<HomePage> {
         children: [
           Center(
             child: RaisedButton(
+              color: Colors.blue,
+              textColor: Colors.white,
               onPressed: _authenticate,
               child: Text("Get Biometric"),
             ),
+          ),SizedBox(
+            height: 10,
           ),
           RichtextWidget(
-            text: 'Can check biometric: ',
+            text: 'Biometric available?: ',
             result: _canCheckBiometric,
           ),
           SizedBox(
